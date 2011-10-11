@@ -50,7 +50,7 @@ namespace CocosNetTests {
 			// draw a green circle with 50 segments with line to center
 			GL.LineWidth(2);
 			GL.Color4(0, 255, 255, 255);
-			Primitives.DrawCircle(new PointF(s.Width / 2, s.Height / 2), 50, 90.ToRadians(), 50, true);
+			Primitives.DrawCircle(new PointF(s.Width / 2, s.Height / 2), 50, 90f.ToRadians(), 50, true);
 			
 			// open yellow poly
 			GL.Color4(255, 255, 0, 255);

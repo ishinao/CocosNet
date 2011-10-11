@@ -46,7 +46,7 @@ namespace CocosNetTests {
 		
 		protected abstract ICloneable[] Scenes { get; }
 		
-		public TestBase() : this(DeviceOrientation.LandscapeLeft) {
+		public TestBase() : this(DeviceOrientation.Portrait) {
 		}
 		
 		public TestBase(DeviceOrientation orientation) {
