@@ -516,7 +516,7 @@ namespace CocosNet {
 			// creating a TimeSpan with ticks. 10 million ticks per second.
 			_animationTimer = NSTimer.CreateRepeatingTimer(TimeSpan.FromTicks(Convert.ToInt64(AnimationInterval * 10000000L)), MainLoop);
 			
-			NSRunLoop.Main.AddTimer(_animationTimer, "NSDefaultRunLoopMode");
+			NSRunLoop.Main.AddTimer(_animationTimer, new NSString("NSDefaultRunLoopMode"));
 		}
 
 		private void StopAnimation() {

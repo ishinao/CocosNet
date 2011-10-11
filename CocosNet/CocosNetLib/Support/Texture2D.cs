@@ -143,7 +143,7 @@ namespace CocosNet.Support {
 			unsafe {
 				fixed (byte* dataPb = data) {
 					using (CGContext context = new CGBitmapContext((IntPtr)dataPb, width, height, 8, width, colorSpace, CGImageAlphaInfo.None)) {
-						context.SetGrayFillColor(1f, 1f);
+						context.SetFillColor(1f, 1f);
 						context.TranslateCTM(0f, height);
 						context.ScaleCTM(1f, -1f);
 						UIGraphics.PushContext(context);
